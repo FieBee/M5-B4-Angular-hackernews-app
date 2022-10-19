@@ -1,12 +1,9 @@
-<h2>Today's article</h2>
-<hr>
-<div>
-  <a href="{{article.url}}" target="_blank">{{article.title}}</a>
-</div>
+
+
 <hr>
 <div>
   <h2>Article Information</h2>
-  <table>
+  <table class="table">
     <tr>
       <td>Title:</td>
       <td><textarea [(ngModel)]="article.title" cols="70"></textarea></td>
@@ -19,12 +16,21 @@
     </tr>
   </table>
 
-  <div *ngFor="let art of articles">
-    <a href="{{art.url}}" target="_blank">{{art.title}}</a>
-  </div>
-  <div *ngFor="let art of articles">
-    <a href="{{art.url}}" target="_blank">{{art.title}}</a>: <app-like></app-like>
+<!--  <div *ngFor="let art of articles">-->
+<!--    <a href="{{art.url}}" target="_blank">{{art.title}}</a>-->
+<!--  </div>-->
+  <div class="m-lg-5" *ngFor="let art of articles">
+    <a href="{{art.url}}" target="_blank">{{art.title}}</a>:
+
+
+    <app-like></app-like>
+
+    <br>
+    <br>
+    <br>
+
+
   </div>
 </div>
 <hr>
-@CodeGym, 2021
+
